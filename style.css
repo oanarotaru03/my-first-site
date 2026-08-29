@@ -40,3 +40,14 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
+section#about {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+section#about h2 {
+    color: #1a5276;
+    margin-top: 0;
+}
