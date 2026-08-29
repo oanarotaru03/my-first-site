@@ -109,3 +109,31 @@ header, main {
     margin-left: auto;
     margin-right: auto;
 }
+section#skills {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+section#skills h2 {
+    color: #1a5276;
+    margin-top: 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: #d6eaf8;
+    color: #1a5276;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
