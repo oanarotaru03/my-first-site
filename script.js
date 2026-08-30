@@ -22,3 +22,8 @@ function showRandomQuote() {
 }
 
 button.addEventListener("click", showRandomQuote);
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+darkModeBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
