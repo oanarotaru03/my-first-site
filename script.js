@@ -8,8 +8,16 @@ const quotes = [
     "You debugged real code today. That's a developer's job."
 ];
 
+let lastIndex = -1;
+
 function showRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+
+    while (randomIndex === lastIndex) {
+        randomIndex = Math.floor(Math.random() * quotes.length);
+    }
+
+    lastIndex = randomIndex;
     message.textContent = quotes[randomIndex];
 }
 
