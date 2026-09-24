@@ -38,3 +38,7 @@ darkModeBtn.addEventListener("click", function() {
         localStorage.setItem("darkMode", "off");
     }
 });
+const footer = document.querySelector("footer p");
+const now = new Date();
+const dateString = now.toLocaleDateString();
+footer.textContent += ` Last updated: ${dateString}.`;
